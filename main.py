@@ -47,6 +47,11 @@ KNOWLEDGE_BASE = {
 def get_response(query):
     query = query.lower()
     
+    # Check for greetings first
+    greetings = ["hola", "buenos días", "buenos dias", "buenas tardes", "buenas noches", "saludos", "qué tal", "que tal", "hi", "hello"]
+    if any(greeting in query for greeting in greetings):
+        return "¡Hola! Soy el asistente virtual del Instituto Carlos Gómez. ¿En qué puedo ayudarte?"
+    
     if any(word in query for word in ["costo", "precio", "pago", "cuánto", "cuanto", "vale", "cobran", "cuesta"]):
         if any(word in query for word in ["examen", "prueba", "admision", "admisión"]):
             response = KNOWLEDGE_BASE["respuestas"]["examen"]["general"] + "\n"
