@@ -64,9 +64,9 @@ def get_response(query):
                 return KNOWLEDGE_BASE["respuestas"]["inscripcion"]["primaria"]
             elif "secundaria" in query:
                 return KNOWLEDGE_BASE["respuestas"]["inscripcion"]["secundaria"]
-            elif "tecnologico" in query or "técnico" in query:
+            elif any(word in query for word in ["tecnologico", "técnico"]):
                 return KNOWLEDGE_BASE["respuestas"]["inscripcion"]["bachillerato_tecnologico"]
-            elif "bachillerato" in query or "prepa" in query:
+            elif any(word in query for word in ["bachillerato", "prepa"]):
                 return KNOWLEDGE_BASE["respuestas"]["inscripcion"]["bachillerato"]
             else:
                 response = KNOWLEDGE_BASE["respuestas"]["inscripcion"]["general"] + "\n\nCostos de inscripción:\n"
