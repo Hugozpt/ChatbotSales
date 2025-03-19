@@ -6,7 +6,7 @@ KNOWLEDGE_BASE = {
             "primaria": "6,900 MXN",
             "secundaria": "7,400 MXN",
             "bachillerato": "7,900 MXN",
-            "bachillerato_tecnologico": "7,900 MXN"
+            "bachillerato_tecnologico": "8,000 MXN"
         },
         "colegiatura": {
             "primaria": "4,100 MXN mensuales",
