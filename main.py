@@ -3,16 +3,16 @@
 KNOWLEDGE_BASE = {
     "costos": {
         "inscripcion": {
-            "primaria": "5,500 MXN",
-            "secundaria": "6,000 MXN",
-            "bachillerato": "6,500 MXN",
-            "bachillerato_tecnologico": "7,000 MXN"
+            "primaria": "6,900 MXN",
+            "secundaria": "7,400 MXN",
+            "bachillerato": "7,900 MXN",
+            "bachillerato_tecnologico": "7,900 MXN"
         },
         "colegiatura": {
-            "primaria": "3,800 MXN mensuales",
-            "secundaria": "4,200 MXN mensuales",
-            "bachillerato": "4,500 MXN mensuales",
-            "bachillerato_tecnologico": "4,800 MXN mensuales"
+            "primaria": "4,100 MXN mensuales",
+            "secundaria": "4,600 MXN mensuales",
+            "bachillerato": "4,900 MXN mensuales",
+            "bachillerato_tecnologico": "4,900 MXN mensuales"
         },
         "generales": {
             "examen_admision": "500 MXN",
@@ -24,21 +24,21 @@ KNOWLEDGE_BASE = {
     "respuestas": {
         "inscripcion": {
             "general": "La inscripción incluye los materiales básicos del ciclo escolar, seguro contra accidentes y credencial escolar.",
-            "primaria": "La inscripción en primaria cuesta 5,500 MXN e incluye los libros de texto básicos.",
-            "secundaria": "La inscripción en secundaria tiene un costo de 6,000 MXN e incluye el material didáctico inicial.",
-            "bachillerato": "Para bachillerato, la inscripción cuesta 6,500 MXN e incluye la guía de estudio.",
-            "bachillerato_tecnologico": "El bachillerato tecnológico tiene una inscripción de 7,000 MXN que incluye acceso a laboratorios especializados."
+            "primaria": "La inscripción en primaria cuesta 6,900 MXN e incluye los libros de texto básicos.",
+            "secundaria": "La inscripción en secundaria tiene un costo de 7,400 MXN e incluye el material didáctico inicial.",
+            "bachillerato": "Para bachillerato, la inscripción cuesta 7,900 MXN e incluye la guía de estudio.",
+            "bachillerato_tecnologico": "El bachillerato tecnológico tiene una inscripción de 7,900 MXN que incluye acceso a laboratorios especializados."
         },
         "colegiatura": {
-            "general": "Las colegiaturas se pagan mensualmente durante 12 meses y cubren todas las clases regulares.",
-            "primaria": "La colegiatura mensual de primaria es de 3,800 MXN e incluye actividades deportivas básicas.",
-            "secundaria": "En secundaria, la colegiatura de 4,200 MXN mensuales incluye talleres complementarios.",
-            "bachillerato": "La colegiatura de bachillerato es 4,500 MXN al mes e incluye orientación vocacional.",
-            "bachillerato_tecnologico": "El bachillerato tecnológico tiene una colegiatura de 4,800 MXN mensuales que incluye prácticas en talleres."
+            "general": "Las colegiaturas se pagan mensualmente durante 10 meses (septiembre a junio) y cubren todas las clases regulares.",
+            "primaria": "La colegiatura mensual de primaria es de 4,100 MXN e incluye actividades deportivas básicas.",
+            "secundaria": "En secundaria, la colegiatura de 4,600 MXN mensuales incluye talleres complementarios.",
+            "bachillerato": "La colegiatura de bachillerato es 4,900 MXN al mes e incluye orientación vocacional.",
+            "bachillerato_tecnologico": "El bachillerato tecnológico tiene una colegiatura de 4,900 MXN mensuales que incluye prácticas en talleres."
         },
         "examen": {
             "general": "El examen de admisión tiene un costo de 500 MXN y evalúa conocimientos básicos según el nivel.",
-            "fechas": "Los exámenes se realizan en marzo y hay fechas adicionales disponibles según el nivel educativo.",
+            "fechas": "Los exámenes se realizan en fechas específicas que pueden consultarse en la página web oficial.",
             "requisitos": "Para presentar el examen se requiere identificación y comprobante de pago."
         }
     }
