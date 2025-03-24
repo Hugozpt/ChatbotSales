@@ -18,7 +18,7 @@ KNOWLEDGE_BASE = {
             "examen_admision": "500 MXN",
             "seguro_escolar": "750 MXN anual",
             "credencial": "150 MXN",
-            "sociedad_padres": "600 MXN anual"
+            "sociedad_padres": "1000 MXN anual"
         }
     },
     "respuestas": {
@@ -89,7 +89,10 @@ def get_response(query):
                     response += f"- {nivel.replace('_', ' ').capitalize()}: {costo}\n"
                 return response
             
-    return "Lo siento, no pude entender tu pregunta. Puedes preguntar sobre costos de inscripción, colegiaturas o examen de admisión."
+    if any(word in query for word in ["padres", "familia", "sociedad", "cuota", "asociacion"]):
+        return f"La cuota anual de la Sociedad de Padres de Familia es de {KNOWLEDGE_BASE['costos']['generales']['sociedad_padres']} para todas las secciones del Instituto."
+
+    return "Lo siento, no pude entender tu pregunta. Puedes preguntar sobre costos de inscripción, colegiaturas, examen de admisión o cuotas de padres de familia."
 
 def main():
     print("¡Bienvenido al chatbot del Instituto Carlos Gómez!")
