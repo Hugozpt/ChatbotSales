@@ -61,7 +61,6 @@ def get_response(query):
     processed_query = preprocess_query(query)
     query = ' '.join(processed_query)
 
-    # Only respond with greeting if it's just a greeting
     greetings = ["hola", "buenos días", "buenos dias", "buenas tardes", "buenas noches", "saludos", "qué tal", "que tal", "hi", "hello"]
     if query in greetings or query.strip() in greetings:
         return "¡Hola! Soy el asistente virtual del Instituto Carlos Gómez. ¿En qué puedo ayudarte?"
@@ -89,7 +88,6 @@ def get_response(query):
                 return response
 
         elif any(word in query for word in ["colegiatura", "mensualidad", "mes"]):
-            # Check for specific section
             if "primaria" in query:
                 return KNOWLEDGE_BASE["respuestas"]["colegiatura"]["primaria"]
             elif "secundaria" in query:
@@ -105,7 +103,6 @@ def get_response(query):
                     response += f"- {nivel.replace('_', ' ').capitalize()}: {costo}\n"
                 return response
 
-    # New block for admission exams
     if any(word in query for word in ["examen", "prueba", "admision", "admisión"]):
         response = KNOWLEDGE_BASE["respuestas"]["examen"]["general"] + "\n"
         response += f"Costo: {KNOWLEDGE_BASE['costos']['generales']['examen_admision']}\n"
@@ -113,7 +110,6 @@ def get_response(query):
         response += KNOWLEDGE_BASE["respuestas"]["examen"]["requisitos"]
         return response
 
-    # New block for contact information
     if any(word in query for word in ["contacto", "teléfono", "telefono", "número", "email", "correo"]):
         return (
             "Puedes ponerte en contacto con nosotros a través de los siguientes medios:\n"
